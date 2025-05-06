@@ -1,5 +1,5 @@
 :root {
-    --main-color: #101418;
+    --main-color: white;
 }
 
 *{
@@ -18,5 +18,76 @@ a {text-decoration: none;}
 
 body{
     background-color: var(--main-color);
-    color: white;
+}
+
+header{
+    min-width: 320px;
+    height: 80px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header_logo{
+    width: 40px;
+    height: 40px;
+    background-image: url('../assets/wiki.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header_title > p{
+    font-size: 1.4rem;
+}
+
+main{
+    padding: 10px;
+}
+
+.container{
+    min-width: 320px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_search-area{
+    border: 1px solid #dfe1e5;
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.textarea{
+    padding-top: 5px;
+    font-size: 1.6rem;
+    flex: 1;
+    border: none;
+    height: 100%;
+    outline: none;
+    resize: none;
+    line-height: 2.2rem;
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+
+.search-area_logo{
+    display: inline-block;
+    margin-left: 10px;
+    height: 100%;
+    width: 40px;
+    background-color: #6485d1;
+    text-align: center;
+}
+
+.search-area_logo > svg{
+    vertical-align: middle;
 }
