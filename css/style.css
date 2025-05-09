@@ -13,11 +13,13 @@ html{
 }
 
 h1 {font-size: 2.2rem;}
-p, a{font-size: 1.6rem;}
-a {text-decoration: none;}
+p{color: #54595D;}
+p, a{font-size: 1.4rem;}
+a {text-decoration: none; color: #3366CC;}
 
 body{
     background-color: var(--main-color);
+    font-family: "Roboto", sans-serif;
 }
 
 header{
@@ -117,16 +119,13 @@ main{
 }
 
 .lang-section_item > a{
-    color: #3366CC;
     margin-bottom: 8px;
     font-size: 1.4rem;
 }
 
 .lang-section_item > p{
-    color: #54595D;
     font-size: 1.4rem;
     line-height: 1.4;
-    font-weight: 100;
 }
 
 .lang-section button{
@@ -153,4 +152,77 @@ footer{
     align-items: center;
     flex-direction: column;
     text-align: center;
+}
+
+.footer-start-logo{
+    width: 45px;
+    height: 45px;
+    margin: 0px 0px 20px 0px;
+    background-image: url('../assets/second_logo.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer_projects{
+    margin: 40px 0px;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+    row-gap: 20px;
+    text-align: left;
+
+}
+
+.projects_item img{
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+}
+
+.projects_item {
+    display: flex;
+}
+
+.projects_item > div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sidebar-text{
+    padding: 15px 0px;
+    background-color: rgb(251, 249, 249);
+    border-radius: 3px;
+    margin-bottom: 40px;
+}
+
+.sidebar-text_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.sidebar-text_logo{
+    width: 32px;
+    height: 32px;
+    background-image: url('../assets/wiki-logo.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sidebar-text > p{
+    max-width: 90%;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+
+.sidebar_stores{
+    margin-top: 20px;
 }
