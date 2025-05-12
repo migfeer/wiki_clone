@@ -62,7 +62,9 @@ main{
 
 .container_search-area{
     border: 1px solid #dfe1e5;
+    min-width: 320px;
     width: 90%;
+    max-width: 400px;
     height: 40px;
     display: flex;
     justify-content: space-between;
@@ -100,6 +102,13 @@ main{
     font-size: 1.4rem;
 }
 
+.lang-section{
+    width: 100%;
+    max-width: 600px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
 .lang-section_container{
     max-width: 90%;
     margin: 0 auto;
@@ -128,7 +137,7 @@ main{
     line-height: 1.4;
 }
 
-.lang-section button{
+.container > button{
     display: block;
     padding: 5px 10px;
     height: 40px;

@@ -1,0 +1,71 @@
+
+.header_container .header_logo{
+    position: absolute;
+    display: none;
+}
+
+.lang-section{
+    order: 1;
+    padding: 0px;
+}
+
+.container_search-area{
+    order: 2;
+}
+
+.lang-section_button{
+    order: 3;
+}
+.lang-section_container{
+    display: block;
+    position: relative;
+}
+
+.lang-section_container .wiki-background{
+    position: relative;
+    width: 180px;
+    height: 150px;
+    background-image: url('../assets/fondowiki.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 220px;
+    left: 210px;
+}
+
+.lang-section_item{
+    position: relative;
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.item--1, .item--5{
+    left: 100px;
+}
+
+.item--3{
+    left: -20px;
+}
+
+
+.item--6{
+    left: 350px;
+    bottom: 295px;
+}
+
+.item--7,.item--8, .item--9, .item--10{
+    left: 440px;
+    bottom: 300px;
+}
+
+.item--7, .item--9{
+    left: 420px;
+}
+
+.item--8{
+    left: 445px;
+}
+
+.item--10{
+    left: 350px;
+}
