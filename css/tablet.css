@@ -17,20 +17,23 @@
     order: 3;
 }
 .lang-section_container{
-    display: block;
+    height: 320px;
     position: relative;
 }
 
 .lang-section_container .wiki-background{
-    position: relative;
+    display: block;
+    position: absolute;
     width: 180px;
-    height: 150px;
+    height: 180px;
     background-image: url('../assets/fondowiki.PNG');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    top: 220px;
-    left: 210px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrar perfectamente */
+    z-index: 1;
 }
 
 .lang-section_item{
@@ -39,33 +42,65 @@
     margin-bottom: 15px;
 }
 
-.item--1, .item--5{
-    left: 100px;
+/* Estilos comunes para todos los items de idioma */
+.lang-section_item {
+    position: absolute;
+    width: 150px;
+    text-align: center;
 }
 
-.item--3{
-    left: -20px;
+
+/* Posicionamiento individual de cada idioma alrededor del logo */
+.item--1 { /* Español */
+    top: 15%;
+    left: 10%;
 }
 
-
-.item--6{
-    left: 350px;
-    bottom: 295px;
+.item--2 { /* English */
+    top: 15%;
+    right: 10%;
 }
 
-.item--7,.item--8, .item--9, .item--10{
-    left: 440px;
-    bottom: 300px;
+.item--3 { /* 日本語 */
+    left: 5%;
+    top: 40%;
 }
 
-.item--7, .item--9{
-    left: 420px;
+.item--4 { /* Русский */
+    right: 5%;
+    top: 40%;
 }
 
-.item--8{
-    left: 445px;
+.item--5 { /* Deutsch */
+    left: 10%;
+    bottom: 15%;
 }
 
-.item--10{
-    left: 350px;
+.item--6 { /* Français */
+    right: 10%;
+    bottom: 15%;
+}
+
+.item--7 { /* 中文 */
+    left: 25%;
+    bottom: 5%;
+}
+
+.item--8 { /* Italiano */
+    right: 25%;
+    bottom: 5%;
+}
+
+.item--9 { /* Português */
+    left: 25%;
+    top: 5%;
+}
+
+.item--10 { /* Polski */
+    right: 25%;
+    top: 5%;
+}
+
+.footer_projects{
+    grid-template-columns: repeat(3, 1fr);
 }

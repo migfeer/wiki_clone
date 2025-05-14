@@ -14,7 +14,7 @@ html{
 
 h1 {font-size: 2.2rem;}
 p{color: #54595D;}
-p, a{font-size: 1.4rem;}
+p, a{font-size: 1.4rem; line-height: 1.6;}
 a {text-decoration: none; color: #3366CC;}
 
 body{
@@ -104,19 +104,23 @@ main{
 
 .lang-section{
     width: 100%;
-    max-width: 600px;
+    
     margin-top: 10px;
     padding: 10px;
 }
 
 .lang-section_container{
-    max-width: 90%;
+    max-width: 600px;
     margin: 0 auto;
     margin-bottom: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 15px;
     row-gap: 15px;
+}
+
+.wiki-background{
+    display: none;
 }
 
 .lang-section_item{
@@ -163,14 +167,27 @@ footer{
     text-align: center;
 }
 
+.footer_description{
+    max-width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .footer-start-logo{
+    margin: 0 auto;
     width: 45px;
     height: 45px;
-    margin: 0px 0px 20px 0px;
+    margin-bottom: 15px;
     background-image: url('../assets/second_logo.PNG');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.footer_description > div p{
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 .footer_projects{
@@ -234,4 +251,9 @@ footer{
 
 .sidebar_stores{
     margin-top: 20px;
+}
+
+.footer_paragraph { 
+    margin: 10px 0px ;
+    text-align: center;
 }
